@@ -1,6 +1,6 @@
 {
-	"short_name": "swtest",
-	"name": "Service-Worker-Test",
+	"short_name": "bannertest",
+	"name": "Banner-Test",
 	"icons": [
 		{
 			"src": "android-chrome-36x36.png",

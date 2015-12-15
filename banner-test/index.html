@@ -2,10 +2,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Sample illustrating the use of Service Worker Sample: Custom Offline Page.">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="manifest.json">
-    <title>Service Worker Sample: Custom Offline Page Sample</title>
+    <title>Banner test</title>
     <script>
       // Add a global error event listener early on in the page load, to help ensure that browsers
       // which don't support specific functionality still end up displaying a meaningful message.
@@ -33,27 +33,13 @@
           outputElement.textContent = 'beforeinstallprompt Event fired';
         });
       });
-    </script>      
-      
     </script>
   </head>
 
   <body>
-    <script>
-    //if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js');
-    //}
-    </script>
-    <div class="modal-dialog">
-    	<div class="modal-content">
-    		<div class="modal-header">
-    			<h4 class="modal-title">Oops! An error occured.</h4>
-    		</div>
-    		<div class="modal-body">
-    	        <span>Don't panic!</span>
-    	        <a href="index.html">Reload</a>
-    		</div>
-    	</div>
-    </div>
+    <p>
+      On the bottom, there should be the banner displayed.<br>
+      if not - please check: https://googlechrome.github.io/samples/app-install-banner/basic-banner/index.html.
+    </p>
   </body>
 </html>

@@ -1,8 +1,8 @@
 # README
 
 ## Description
-Proof of concept that displays an add-to-homescreen banner on android mobile
-and uses a service-worker that shows an offline-site if disconnected to network.
+Proof of concept to display an add-to-homescreen banner on android mobile.
+Uses a service-worker that shows an offline-site if disconnected to network.
 
 ### add-to-homescreen-banner
 

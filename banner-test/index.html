@@ -7,6 +7,7 @@
     <link rel="manifest" href="manifest.json">
     <title>Banner test</title>
     <script>
+      importScripts('serviceworker-cache-polyfill.js');
       window.addEventListener('load', function() {
         var outputElement = document.getElementById('output');
         navigator.serviceWorker.register('sw.js', { scope: './' })

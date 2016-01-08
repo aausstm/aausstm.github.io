@@ -7,31 +7,15 @@
     <link rel="manifest" href="manifest.json">
     <title>Banner test</title>
     <script>
-      // Add a global error event listener early on in the page load, to help ensure that browsers
-      // which don't support specific functionality still end up displaying a meaningful message.
-      window.addEventListener('error', function(error) {
-        if (ChromeSamples && ChromeSamples.setStatus) {
-          ChromeSamples.setStatus(error.message + ' (Your browser may not support this feature.)');
-          error.preventDefault();
-        }
-      });
-
       window.addEventListener('load', function() {
-  
         var outputElement = document.getElementById('output');
-  
         navigator.serviceWorker.register('sw.js', { scope: './' })
           .then(function(r) {
             console.log('registered service worker');
           })
           .catch(function(jodel) {
-            console.error('hm... ');
-            console.error(jodel);
+            console.error('service worker fails');
           });
-         
-        window.addEventListener('beforeinstallprompt', function(e) {
-          outputElement.textContent = 'beforeinstallprompt Event fired';
-        });
       });
     </script>
   </head>

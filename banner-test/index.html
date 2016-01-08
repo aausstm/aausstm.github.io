@@ -7,9 +7,6 @@
     <link rel="manifest" href="manifest.json">
     <title>Banner test</title>
     <script>
-      window.addEventListener('load', function() {
-        var outputElement = document.getElementById('output');
-        
         navigator.serviceWorker.register('sw.js', { scope: './' })
           .then(function(registration) {
             // Registration was successful
@@ -18,8 +15,6 @@
             // registration failed :(
             console.log('ServiceWorker registration failed: ', err);
           });
-
-      });
     </script>
   </head>
 
@@ -28,6 +23,5 @@
       On the bottom, there should be the banner displayed.<br>
       if not - please check: <a href="https://googlechrome.github.io/samples/app-install-banner/basic-banner/index.html">https://googlechrome.github.io/samples/app-install-banner/basic-banner/index.html</a>.
     </p>
-    <div id="output"></div>
   </body>
 </html>

@@ -22,7 +22,7 @@ If a request fails it displays the offline.html page.
 
 Add the following script somewhere in you index.html to register the service worker:
 
-`
+```
 <script>
     navigator.serviceWorker.register('sw.js', { scope: './' })
       .then(function(registration) {
@@ -33,4 +33,4 @@ Add the following script somewhere in you index.html to register the service wor
         console.log('ServiceWorker registration failed: ', err);
       });
 </script>
-`
+```

@@ -13,6 +13,8 @@
 
 'use strict';
 
+importScripts('serviceworker-cache-polyfill.js');
+
 // Incrementing CACHE_VERSION will kick off the install event and force previously cached
 // resources to be cached again.
 const CACHE_VERSION = 1;
